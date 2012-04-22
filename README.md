@@ -1,4 +1,5 @@
-progorg
-=======
+* porg
+** project-org
 
-Tweaking org-mode into tracking coding projects
+=======
+This is an Emacs mode which attempts to optimise [org-mode](http://orgmode.org/) for software projects.
