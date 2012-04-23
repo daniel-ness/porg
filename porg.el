@@ -43,8 +43,7 @@
 (defun porg-mode ()
   (interactive)
   (setq porg-project-root (file-name-directory buffer-file-name))
-  (setq porg-buffer (current-buffer))
-  (porg-inspect-dir))
+  (setq porg-buffer (current-buffer)))
 
 (setq auto-mode-alist
       (append '((".project.org" . porg-mode))
