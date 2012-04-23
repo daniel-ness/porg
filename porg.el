@@ -24,7 +24,7 @@
   (set-buffer porg-buffer)
   (goto-char 0)
   (let* ((flink (format "[[file:/%s::%s][%s]]" file todo-str todo-str))
-	 (pattern (format " \\(TODO|DONE\\) %s" (regexp-quote flink)))
+	 (pattern (format " \\(TODO\\|DONE\\) %s" (regexp-quote flink)))
 	 (todo (format "** TODO %s\n" flink)))
     (when (not (string-match pattern (buffer-string)))
       (if (not (re-search-forward "^\* TODOs" nil t))
